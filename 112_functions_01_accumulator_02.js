@@ -13,7 +13,6 @@ function computeSumOfAllElements(array) {
     for(let j = 0; j < array.length; j++) {
         sum += array[j]
     }
-
     return sum
 }
 

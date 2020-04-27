@@ -1,23 +1,32 @@
 /*
 Debugging (1)
 
-debug a function that takes in an object, and a target value. This function will 
+Debug a function that takes in an object, and a target value. This function will 
 iterate over the object's values, and attempt to locate the target value. If the value 
 is found, the function should return the name of the key where the value in question is 
 located, and if not, the function should return -1.
 */
 
+/*
+Original:
 function keyOfObjectValue(object, target) {
+    for (var key in object) {
+        if (object[key] === target) {
+            return key;
+        } else {
+            return -1;
+        }
+    }
+}
+*/
 
+function keyOfObjectValue(object, target) {
     for (const key in object) {  
         if (object[key] === target) {
-            // console.log(object[key])
-            // console.log(target)
             return key;
         } 
     }
     return -1;
-
 }
 
 var result1 = keyOfObjectValue({cucumbers: 14, carrots: 20, peas: 400}, 20);

@@ -7,9 +7,21 @@ whose value is greater than 40. If there are no values above 40, then the functi
 should return 0.
 */
 
+/*
+Original:
+function getElementsAbove40(numbers) {
+    for (var i = 0; i < numbers.length; i++) {
+        var count = 0;
+        if (numbers[i] > 40) {
+        count++;
+        }
+    }
+    return count;
+}
+*/
+
 function getElementsAbove40(numbers) {
     var count = 0;
-
     for (var i = 0; i < numbers.length; i++) {
         if (numbers[i] > 40) {
             count++;

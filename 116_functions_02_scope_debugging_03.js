@@ -6,6 +6,22 @@ This function should iterate over the input array and should create, and return,
 resulting sentence from the words therein.
 */
 
+/*
+Original:
+var sentence = "";
+
+function createSentence(words) {
+	for (var i = 0; i < words.length; i++) {
+		// hint: does this line need to happen every iteration?
+		sentence += words[i] + ' ';
+		if (i === words.length - 1)
+			sentence += '.';
+		}
+	}
+	sentence;
+}
+*/
+
 function createSentence(words) {
     var sentence = "";
     

@@ -20,6 +20,11 @@ useBreak([1, 2, 3, 4, 5, 6], 3);
 */
 
 function useBreak(array, index) {
+    // create a loop which iterates over the input array
+    // if current index is greater than input index
+    // use described statement to stop the loop completely (must include semi-colon!)
+    // log current array element to the console
+
     for (var i = 0; i < array.length; i++) {
         if (i === index + 1) {
           break;

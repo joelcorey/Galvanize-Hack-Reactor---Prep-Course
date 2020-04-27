@@ -16,7 +16,6 @@ function computeAverageOfNumbers(array) {
     for(let j = 0; j < array.length; j++) {
         average += array[j]
     }
-
     return average /= array.length
 }
 
