@@ -12,8 +12,9 @@ function makeACopy(array) {
     // create a copyOfArray variable
     // assign it to a copy of the array
     // return the copyOfArray variable
-    let copyOfArray = array.slice(0, array.length)
-    return copyOfArray
+
+    let copyOfArray = array.slice(0, array.length);
+    return copyOfArray;
 }
 
 var array1 = ['Q', 'u', 'e', 'u', 'e'];

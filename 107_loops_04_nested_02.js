@@ -27,9 +27,9 @@ loopAnObjectOfObjects({ structures: {queue: true, stack: false}, plantLife: {tre
 */
 
 function loopAnObjectOfObjects(nestedObject) {
-  // create a loop which iterates over the input object
-  // create an inner loop which iterates over current inner object
-  // log current value to the console
+	// create a loop which iterates over the input object
+	// create an inner loop which iterates over current inner object
+	// log current value to the console
 
     for (key1 in nestedObject) {
         for (key2 in nestedObject[key1]) {

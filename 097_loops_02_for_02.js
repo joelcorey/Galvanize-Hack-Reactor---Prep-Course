@@ -27,6 +27,7 @@ loopAnArrayAgain([1, 2, 3, 4, 5]);
 function loopAnArrayAgain(array) {
     // create a loop which iterates over the input array
     // log current array element to the console
+    
     for(let i = 0; i < array.length; i++) {
         console.log(array[i]);
     }

@@ -14,7 +14,7 @@ function findAgent(agentList, agentToSearchFor) {
     // if agentToSearchFor is present within agentList
     // return '{agentToSearchFor} is present within Agent list'
     
-    if (agentList.includes(agentToSearchFor)) return `${agentToSearchFor} is present within Agent list`
+    if (agentList.includes(agentToSearchFor)) return `${agentToSearchFor} is present within Agent list`;
 }
 
 var result1 = findAgent(['001', '005', '007', '009'], '007');

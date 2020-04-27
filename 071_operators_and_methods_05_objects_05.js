@@ -11,8 +11,9 @@ function isPropertyPresent(object, key) {
     // create an isPresent variable
     // assign it to a comparison between object's value at key and undefined
     // return the isPresent variable
-    let isPresent = object.hasOwnProperty(key) || false
-    return isPresent
+
+    let isPresent = object.hasOwnProperty(key) || false;
+    return isPresent;
 }
 
 var object1 = {

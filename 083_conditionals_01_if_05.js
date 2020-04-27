@@ -16,7 +16,7 @@ function generateReportSummary(reportTotals, teamName) {
     // if teamName's report total is greater than 5
     // return '{teamName} has surpassed goal with {number_of_reports_for_team} reports'
     
-    if (reportTotals[teamName] > 5) return `${teamName} has surpassed goal with ${reportTotals[teamName]} reports`
+    if (reportTotals[teamName] > 5) return `${teamName} has surpassed goal with ${reportTotals[teamName]} reports`;
 }
 
 var result1 = generateReportSummary({a_team: 12, b_team: 7, c_team: 0}, 'b_team');

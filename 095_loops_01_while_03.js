@@ -30,10 +30,11 @@ function loopAString(string) {
     // create a loop which iterates over the input string
     // log current string character to the console
     // increment value of index variable
+    
     let index = 0
     while (index < string.length) {
-        console.log(string[index])
-        index++
+        console.log(string[index]);
+        index++;
     }
 }
 

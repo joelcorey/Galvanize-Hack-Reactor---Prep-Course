@@ -11,7 +11,8 @@ should return the string 'There are fewer apples than oranges'.
 function fewerApples(apples, oranges) {
     // if there are fewer apples than oranges
     // return 'There are fewer apples than oranges'
-    if (apples < oranges) return 'There are fewer apples than oranges'
+
+    if (apples < oranges) return 'There are fewer apples than oranges';
 }
 
 var result1 = fewerApples(4, 7);

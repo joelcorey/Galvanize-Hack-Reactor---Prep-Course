@@ -15,8 +15,8 @@ function passwordLongEnough(password) {
     // otherwise
       // return 'Please enter a password of at least 9 characters'
     
-    if (password.length > 8) return 'Password is long enough'
-    else return 'Please enter a password of at least 9 characters'
+    if (password.length > 8) return 'Password is long enough';
+    else return 'Please enter a password of at least 9 characters';
 }
 
 var result1 = passwordLongEnough('passafassaword');

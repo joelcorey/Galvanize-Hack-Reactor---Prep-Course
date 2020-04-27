@@ -24,7 +24,8 @@ loopOverValues({make: 'Ford', model: 'T', year: 1913});
 function loopOverValues(object) {
     // create a loop which iterates over the input object
     // log current value to the console
+
     for(key in object) {
-        console.log(object[key])
+        console.log(object[key]);
     }
 }

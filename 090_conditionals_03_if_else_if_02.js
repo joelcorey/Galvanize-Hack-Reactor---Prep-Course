@@ -32,7 +32,7 @@ function selectShirtSize(choice) {
         return 'You should select a different shirt';
 }
 
-ar result1 = selectShirtSize(25);
+var result1 = selectShirtSize(25);
 console.log('should log "You should select a size S":', result1);
 
 var result2 = selectShirtSize(32);

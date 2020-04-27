@@ -17,8 +17,8 @@ function findIngredient(ingredientList, ingredientToSearchFor) {
     // otherwise
       // return '{ingredientToSearchFor} is not on the list'
     
-    if (ingredientList.includes(ingredientToSearchFor)) return `${ingredientToSearchFor} is on the list`
-    else return `${ingredientToSearchFor} is not on the list`
+    if (ingredientList.includes(ingredientToSearchFor)) return `${ingredientToSearchFor} is on the list`;
+    else return `${ingredientToSearchFor} is not on the list`;
 }
 
 var result1 = findIngredient(['flour', 'butter', 'sugar', 'eggs'], 'sugar');

@@ -19,9 +19,9 @@ function measureRequiredFruit(fruitTotals) {
     // return 'We do not have enough of both fruits'
       
     if (fruitTotals.bananas > 3 && fruitTotals.strawberries > 10)
-        return `We have enough fruit, with ${fruitTotals.bananas} bananas, and ${fruitTotals.strawberries} strawberries`
+        return `We have enough fruit, with ${fruitTotals.bananas} bananas, and ${fruitTotals.strawberries} strawberries`;
     else
-        return `We do not have enough of both fruits`
+        return `We do not have enough of both fruits`;
 }
 
 var result1 = measureRequiredFruit({bananas: 4, strawberries: 12});

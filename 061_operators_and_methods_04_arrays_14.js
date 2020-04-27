@@ -14,8 +14,9 @@ function applySlice(array, start, end) {
     // create a sliceOfArray variable
     // assign it to a portion of the array from before start, up to, but not including end
     // return the sliceOfArray variable
-    let sliceOfArray = array.slice(start, end)
-    return sliceOfArray
+
+    let sliceOfArray = array.slice(start, end);
+    return sliceOfArray;
 }
 
 var array1 = ['Q', 'u', 'e', 'u', 'e'];

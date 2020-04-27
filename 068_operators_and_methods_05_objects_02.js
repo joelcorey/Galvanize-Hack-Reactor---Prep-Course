@@ -11,7 +11,8 @@ function accessAProperty(object, key) {
     // create a result variable,
     // assign it to an expression that accesses the property in the object located at the key
     // return the result variable
-    return object[key]
+    
+    return object[key];
 }
 
 var resultValue = accessAProperty({machine: 'Computer', type: 'Macbook', ram: '2 GHz'}, 'ram');

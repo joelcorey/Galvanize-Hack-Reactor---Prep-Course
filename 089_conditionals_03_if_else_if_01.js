@@ -20,13 +20,13 @@ function player1Choice(choice) {
       // return "Player 1 has chosen poorly!"
       
     if (choice === 'rock') 
-        return 'Player 1 chose rock'
+        return 'Player 1 chose rock';
     else if (choice === 'paper') 
-        return 'Player 1 chose paper'
+        return 'Player 1 chose paper';
     else if (choice === 'scissors') 
-        return 'Player 1 chose scissors'
+        return 'Player 1 chose scissors';
     else 
-        return 'Player 1 has chosen poorly!'
+        return 'Player 1 has chosen poorly!';
 }
 
 var result1 = player1Choice('rock');

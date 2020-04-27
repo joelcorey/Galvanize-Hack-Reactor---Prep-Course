@@ -29,6 +29,10 @@ loopAnObjectOfArrays({ third: [false, false], fourth: ['runs'], ninth: ['q', 'l'
 */
 
 function loopAnObjectOfArrays(objectOfArrays) {
+    // create a loop which iterates over the input object
+    // create an inner loop which iterates over current inner array
+    // log current value to the console
+
     for(key in objectOfArrays) {
         for(let i = 0; i < objectOfArrays[key].length; i++) {
             console.log(objectOfArrays[key][i]);
