@@ -25,7 +25,6 @@ function countAllCharacters(string) {
         {
             count[array[i]] += 1;
         }
-        
     }
     return count;
 }

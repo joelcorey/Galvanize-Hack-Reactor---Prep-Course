@@ -24,8 +24,7 @@ function countWords(stringOfWords) {
         else
         {
             count[array[i]] += 1;
-        }
-        
+        }     
     }
     return count;
 }
