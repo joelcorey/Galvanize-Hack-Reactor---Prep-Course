@@ -61,18 +61,41 @@ function map(array, callbackFunction) {
     var newArray = [];
   
     for (var i = 0; i < array.length; i++) {
-      newArray = newArray + callbackFunction(element);
+      	newArray.push(callbackFunction(array[i]));
     }
   
     return newArray;
-  }
+}
   
-  function cubeAll(numbers) {
-    return map(numbers, function(n) {
-      return n * n;
-    });
-  }
-  
-  // ASSERTION FUNCTION(S) TO BE USED
-  
-  // TESTS CASES
+function cubeAll(numbers) {
+	return map(numbers, function(n) {
+		return n * n * n;
+	});
+}
+
+// ASSERTION FUNCTION(S) TO BE USED
+function assertArraysEqual(actual, expected, testName) {
+	let failedMessage = `FAILED [${testName}] Expected ${expected} to equal ${actual}`;
+
+	if (actual.length !== expected.length) {
+		console.log(failedMessage);
+		return;
+	}
+
+	for (let i = 0; i < actual.length; i++) {
+		if (actual[i] !== expected[i]) {
+			console.log(failedMessage);
+			return;
+		} 
+	}
+
+	console.log('passed');
+	return;
+}
+
+// TESTS CASES
+let input = cubeAll([1, 2, 3,]);
+assertArraysEqual(input, [1, 8, 27], "Array's expected to be equal");
+
+let input2 = cubeAll([1, 2, 3,]);
+assertArraysEqual(input2, [1, 4, 9], "Array's expected to be equal");
