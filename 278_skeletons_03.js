@@ -32,16 +32,18 @@ function isIsogram(text) {
 // FUNCTION DEFINITION(S)
 function isIsogram(text) {
     const setLetters = new Set()
+    let lower = text.toLowerCase();
+
     // add each char to a set
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
     // note: a set drops dup values
-    for (let i = 0; i < text.length; i++) {
-        setLetters.add(text[i])
+    for (let i = 0; i < lower.length; i++) {
+        setLetters.add(lower[i])
     }
    
     // thus, to see if all the chars were unique,
     // check length of text and the size of the set
-    if(text.length !== setLetters.size) return false
+    if(lower.length !== setLetters.size) return false
     return true
 }
 
@@ -58,6 +60,14 @@ var actual = 'hi'
 var expected = true
 assertIsIsogram(actual, true, 'isIsogram succesfully tests an isogram');
 
+var actual = 'bye'
+var expected = true
+assertIsIsogram(actual, true, 'isIsogram succesfully tests an isogram');
+
 var actual = 'hello'
+var expected = true
+assertIsIsogram(actual, true, 'isIsogram succesfully tests an isogram');
+
+var actual = 'goodbye'
 var expected = true
 assertIsIsogram(actual, true, 'isIsogram succesfully tests an isogram');
