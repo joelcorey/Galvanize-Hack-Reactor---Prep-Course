@@ -11,6 +11,7 @@ function getProduct(num1, num2) {
     // create a result variable,
     // assign it to num1 times num2
     // return the result variable
+    
     let result = num1 * num2;
     return result;
 }

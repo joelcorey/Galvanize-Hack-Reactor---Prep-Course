@@ -10,8 +10,9 @@ key from the input object, then return the object.
 function removeAProperty(object, key) {
     // remove the property at the given key from the object
     // return the object
-    delete object[key]
-    return object
+
+    delete object[key];
+    return object;
 }
 
 var resultObject1 = removeAProperty({q: 9, r: 10, text: 'bad entry'}, 'text');

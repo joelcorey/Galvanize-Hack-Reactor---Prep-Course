@@ -19,10 +19,10 @@ function isAnObject(input) {
     // assign it to a combination of isObject AND isNotAnArray
     // return the isObjectAndNotAnArray variable
     
-    let isObject = typeof input
-    let isNotAnArray = !Array.isArray(input)
-    let isObjectAndNotAnArray = isObject && isNotAnArray
-    return isObjectAndNotAnArray
+    let isObject = typeof input;
+    let isNotAnArray = !Array.isArray(input);
+    let isObjectAndNotAnArray = isObject && isNotAnArray;
+    return isObjectAndNotAnArray;
 }
 
 var resultBoolean1 = isAnObject([1, 2, 3]);
